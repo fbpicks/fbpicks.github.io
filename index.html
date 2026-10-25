@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+u<!DOCTYPE html>
 <html>
 <head>
 	<title>NFL Pick Selector</title>
@@ -208,8 +208,8 @@ function SendPicks(){
 		to_name1: 'sidewinderalan@yahoo.com',
 		to_name2: frm1.email.value
 	};
- 	//emailjs.send('service_nuou6g5', 'template_ym9gmvu', templateParams)
-	 emailjs.send('gmail', 'service_nuou6g5', templateParams)
+ 	emailjs.send('service_nuou6g5', 'template_ym9gmvu', templateParams)
+	 //emailjs.send('gmail', 'service_nuou6g5', templateParams)
 		.then(function(response) {
 		   console.log('SUCCESS!', response.status, response.text);
 		   $("#submit_status").html('Picks sent! See your email for confirmation.<br>' + 
